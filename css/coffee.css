@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: #412315;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    text-align: center;
+    color: #FBF2C0;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+}
+.logo {
+    height: 30px;
+    width: 30px;
+    margin: 8px;
+}
+
+.page {
+    display:grid;
+    grid-template-areas:
+    "header header"
+    "items   name"
+    "items   payment"
+    "total   total"
+    "button   button";
+    column-gap: 3rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+}
+.items {
+    grid-area: items;
+    padding: 10px;
+    height: 370px;
+    border-radius: 12px;
+}
+.item {
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    padding: 10px;
+    
+
+}
+.subitem {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+.subitem p {
+    font-size: 12px;
+    color: #885A2D;
+}
+.item-price {
+    width: 80%;
+    margin-left: 20px;
+    text-align: end;
+}
+hr {
+    border-color: #ddb892;
+}
+.name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    height: 150px;
+    border-radius: 8px;
+    color: #885A2D;
+}
+.payment {
+    height: 200px;
+    padding: 10px;
+    grid-area: payment;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #885A2D;
+    
+}
+.lab {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    position: relative;
+}
+.lab label {
+    position: absolute;
+    bottom:24px;
+    left: 28px;
+    background-color: #EEE1D5;
+}
+.info {
+    background-color: #EEE1D5;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    max-width: 100%;
+    
+}
+.input {
+    border-radius: 15px;
+    padding: 8px;
+    height: 35px;
+    border-color: #885A2D;
+    border-style: solid;
+    background-color: #EEE1D5;
+}
+.ccv {
+    max-width: 35%;
+}
+.total {
+    margin: 30px;
+    grid-area: total;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.total-details {
+    max-width: 15%;
+    text-align: start;
+    font-size: 18px;
+}
+.order-button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:100%;
+}
+.order-button button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    background-color: #DEB993;
+}
