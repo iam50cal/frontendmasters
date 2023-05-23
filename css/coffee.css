@@ -103,7 +103,7 @@ hr {
 .info {
     background-color: #EEE1D5;
     box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
-    max-width: 100%;
+    width: 100%;
     
 }
 .input {
@@ -115,7 +115,7 @@ hr {
     background-color: #EEE1D5;
 }
 .ccv {
-    max-width: 35%;
+    width: 35%;
 }
 .total {
     margin: 30px;
@@ -125,7 +125,7 @@ hr {
     align-items: center;
 }
 .total-details {
-    max-width: 15%;
+    width: 15%;
     text-align: start;
     font-size: 18px;
 }
@@ -134,7 +134,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width:100%;
+    width:100%;
 }
 .order-button button {
     width: 100%;
